@@ -804,7 +804,7 @@ Installation of Python packages may fail.
       sys.exit(1)
     log = self.start_building_package("Python")
     os.chdir(self.tmp_dir)
-    python_tarball = self.fetch_package(pkg_name=PYTHON_PKG, pkg_url=DEPENDENCIES_BASE)
+    python_tarball = self.fetch_package(pkg_name=PYTHON_PKG, pkg_url=PYTHON_BASE)
     if self.check_download_only(PYTHON_PKG): return
     python_dir = untar(python_tarball)
     self.chdir(python_dir, log=log)
@@ -915,7 +915,7 @@ _replace_sysconfig_paths(build_time_vars)
       sys.exit(1)
     log = self.start_building_package("Python3")
     os.chdir(self.tmp_dir)
-    python_tarball = self.fetch_package(pkg_name=PYTHON3_PKG, pkg_url=DEPENDENCIES_BASE)
+    python_tarball = self.fetch_package(pkg_name=PYTHON3_PKG, pkg_url=PYTHON3_BASE)
     if self.check_download_only(PYTHON3_PKG): return
     python_dir = untar(python_tarball)
     self.chdir(python_dir, log=log)
@@ -1229,7 +1229,7 @@ _replace_sysconfig_paths(build_time_vars)
     # https://wiki.openssl.org/index.php/Compilation_and_Installation#Configure_.26_Config
     # http://stackoverflow.com/a/20740964
 
-    pkg_url=DEPENDENCIES_BASE
+    pkg_url=OPENSSL_BASE
     pkg_name=OPENSSL_PKG
     pkg_name_label="OpenSSL"
     pkg_log = self.start_building_package(pkg_name_label)

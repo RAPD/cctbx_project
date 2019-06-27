@@ -52,8 +52,11 @@ def get_pypi_package_information(package, version=None, information_only=False):
   return package
 
 DEPENDENCIES_BASE = "https://gitcdn.xyz/repo/dials/dependencies/master/"
+OPENSSL_BASE = "https://www.openssl.org/source/old/1.0.2/"
 OPENSSL_PKG = "openssl-1.0.2r.tar.gz"    # OpenSSL
+PYTHON3_BASE = "https://www.python.org/ftp/python/3.7.2/"
 PYTHON3_PKG = "Python-3.7.2.tgz"
+PYTHON_BASE = "https://www.python.org/ftp/python/2.7.16/"
 PYTHON_PKG = "Python-2.7.16.tgz"
 
 # from CCI
