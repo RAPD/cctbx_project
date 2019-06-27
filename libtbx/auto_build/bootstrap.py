@@ -727,10 +727,14 @@ class libsvm_module(SourceModule):
 # These must all provide anonymous access.
 class cctbx_module(SourceModule):
   module = 'cctbx_project'
+  # anonymous = ['git',
+  #              'git@github.com:cctbx/cctbx_project.git',
+  #              'https://github.com/cctbx/cctbx_project.git',
+  #              'https://github.com/cctbx/cctbx_project/archive/master.zip']
   anonymous = ['git',
-               'git@github.com:cctbx/cctbx_project.git',
-               'https://github.com/cctbx/cctbx_project.git',
-               'https://github.com/cctbx/cctbx_project/archive/master.zip']
+               'git@github.com:RAPD/cctbx_project.git',
+               'https://github.com/RAPD/cctbx_project.git',
+               'https://github.com/RAPD/cctbx_project/archive/master.zip']
 
 class qrefine_module(SourceModule):
   module = 'qrefine'
